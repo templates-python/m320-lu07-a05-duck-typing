@@ -1,12 +1,11 @@
-def calculate():
-    """
-    calculates the total
-    :return: None
-    """
-    price = 15.75
-    quantity = 3  # TODO change quantity to 5
-    print(f'Total: {price * quantity}')
+from zoo import Zoo
 
+def main():
+    zoo = Zoo()
+    zoo.print_all_buildings()
+    zoo.print_all_vehicles()
+    zoo.print_all_animals()
+    zoo.print_worth_of_the_zoo()
 
 if __name__ == '__main__':
-    calculate()
+    main()

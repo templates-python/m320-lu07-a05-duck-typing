@@ -47,28 +47,6 @@ class Zoo:
         self._animals.append(Crocodile(52000.0, 'Crocstar'))
         self._animals.append(Cobra(7000.0, 'Medusa'))
 
-    def print_all_buildings(self):
-        print(f'----\nAnzahl Gebäude: {len(self._buildings)}')
-        for building in self._buildings:
-            print(building)
 
-    def print_all_vehicles(self):
-        print(f'----\nAnzahl Verkehrsmittel: {len(self._vehicles)}')
-        for vehicle in self._vehicles:
-            print(vehicle)
-
-    def print_all_animals(self):
-        print(f'----\nAnzahl Tiere: {len(self._animals)}')
-        for animal in self._animals:
-            print(animal)
-
-    def print_worth_of_the_zoo(self):
-        inventory_elements = self._animals + self._vehicles + self._buildings
-        print(f'---\n{len(inventory_elements)} Objekte im Inventar mit Totalwert von')
-        worth = 0.0
-        for element in inventory_elements:
-            if hasattr(element, 'inventory'):
-               worth += element.inventory
-        print(f'Fr. {worth}')
 
 

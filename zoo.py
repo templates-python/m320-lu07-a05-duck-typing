@@ -1,12 +1,13 @@
 from car import Car
-from tractor import Tractor
 from catering import Catering
-from office import Office
-from enclosure import Enclosure
 from cobra import Cobra
 from crocodile import Crocodile
-from wolf import  Wolf
+from enclosure import Enclosure
+from office import Office
+from tractor import Tractor
+from wolf import Wolf
 from zebra import Zebra
+
 
 class Zoo:
 
@@ -68,7 +69,5 @@ class Zoo:
         worth = 0.0
         for element in inventory_elements:
             if hasattr(element, 'inventory'):
-               worth += element.inventory
+                worth += element.inventory
         print(f'Fr. {worth}')
-
-

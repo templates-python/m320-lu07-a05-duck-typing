@@ -1,4 +1,6 @@
 from abc import ABC
+
+
 class Vehicle(ABC):
 
     def __init__(self, kind_of, inventory, designation):

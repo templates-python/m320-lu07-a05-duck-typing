@@ -1,12 +1,13 @@
 from car import Car
-from tractor import Tractor
 from catering import Catering
-from office import Office
-from enclosure import Enclosure
 from cobra import Cobra
 from crocodile import Crocodile
-from wolf import  Wolf
+from enclosure import Enclosure
+from office import Office
+from tractor import Tractor
+from wolf import Wolf
 from zebra import Zebra
+
 
 class Zoo:
 
@@ -46,7 +47,3 @@ class Zoo:
         self._animals.append(Crocodile(52000.0, 'Snapper'))
         self._animals.append(Crocodile(52000.0, 'Crocstar'))
         self._animals.append(Cobra(7000.0, 'Medusa'))
-
-
-
-

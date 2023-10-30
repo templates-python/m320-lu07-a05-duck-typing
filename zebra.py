@@ -1,5 +1,6 @@
 from mammals import Mammals
 
+
 class Zebra(Mammals):
 
     def __init__(self, name, inventory):

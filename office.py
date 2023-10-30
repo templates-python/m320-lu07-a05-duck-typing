@@ -1,5 +1,6 @@
 from building import Building
 
+
 class Office(Building):
 
     def __init__(self, inventory, designation):
